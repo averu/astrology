@@ -2,17 +2,31 @@
   "name": "svelte-starter-template",
   "version": "1.0.0",
   "main": "main.js",
-  "author": "Holben888 <holben888@gmail.com>",
+  "author": "averu <neuf-seize@outlook.jp>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@types/chrome": "0.0.117",
+    "@types/copy-webpack-plugin": "^6.0.0",
+    "@types/jquery": "^3.5.0",
+    "@types/webpack": "^4.41.18",
+    "copy-webpack-plugin": "^6.0.3",
     "rollup": "^2.2.0",
     "rollup-plugin-livereload": "^1.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-svelte": "^5.1.1",
-    "svelte": "^3.20.1"
+    "svelte": "^3.20.1",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
   },
   "scripts": {
-    "build": "rollup -c rollup.config.js --watch"
+    "rollup": "rollup -c rollup.config.js --watch",
+    "build": "webpack"
   }
 }

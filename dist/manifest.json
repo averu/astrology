@@ -1,0 +1,25 @@
+{
+  "name": "Astrology",
+  "version": "1.0",
+  "description": "YouTube Chatのデザイン変更するやつ",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/watch*", "*://*.youtube.com/live_chat*"],
+    "js": [
+      "content_scripts.js"
+    ]
+  }],
+  "permissions": [
+    "tabs"
+  ],
+  "options_page": "options.html"
+}

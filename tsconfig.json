@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* 基本オプション */
+    // " incremental": true,                  /* インクリメンタルコンパイルを有効にする */
+    "target": "es5",                          /* ECMAScript のターゲットバージョンを指定します: 'ES3' (デフォルト), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', または 'ESNEXT' */
+    "module": "commonjs",                     /* モジュールのコード生成を指定する: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', または 'ESNext'。*/
+    // "lib ": [],                            /* コンパイルに含めるライブラリファイルを指定します。*/
+    // "allowJs": true,                       /* javascriptファイルのコンパイルを許可します。*/
+    // "checkJs": true,                       /* .jsファイルのエラーを報告します。*/
+    // "jsx": "preserve",                     /* JSXのコード生成を指定する: 'preserve'、'react-native'、または'react'。*/
+    // "declaration": true,                   /* 対応する'.d.ts'ファイルを生成します。*/
+    // "declarationMap": true,                /* 対応する'.d.ts'ファイルごとにソースマップを生成します。*/
+    // "sourceMap": true,                     /* 対応する '.map' ファイルを生成します。*/
+    // "outFile": "./",                       /* 連結して一つのファイルに出力します。*/
+    // "outDir": "./",                        /* 出力構造体をディレクトリにリダイレクトする。*/
+    // "rootDir": "./",                       /* 入力ファイルのルートディレクトリを指定します。出力ディレクトリ構造を --outDir で制御する場合に使用します。*/
+    // "composite": true,                     /* プロジェクトのコンパイルを有効にする */
+    // "tsBuildInfoFile": "./",               /* インクリメンタルコンパイル情報を格納するファイルを指定する */
+    // "removeComments": true,                /* 出力にコメントを出さない。*/
+    // "noEmit": true,                        /* 出力しない。*/
+    // "importHelpers": true,                 /* エミットヘルパーを 'tslib' からインポートします。*/
+    // "downlevelIteration": true,            /* 'ES5' や 'ES3' を対象とした場合、'for-of'、'spread'、'destructuring' のイテレート可能性を完全にサポートする。*/
+    // "insolatedModules": true,              /* 各ファイルを個別のモジュールとしてトランスパイルします (ts.transpileModule に似ています)。*/
+
+    /* 厳格な型チェックオプション */
+    // "strict": true,                           /* すべての厳格な型チェックオプションを有効にします。*/
+    // "noImplicitAny": true,                 /* 暗黙の'any'型を持つ式や宣言に対してエラーを発生させます。*/
+    // "strictNullChecks": true,              /* 厳密なnullチェックを有効にします。*/
+    // "strictFunctionTypes": true,           /* 関数型の厳密なチェックを有効にします。*/
+    // "strictBindCallApply": true,           /* 関数に対する厳格な 'bind'、'call'、'apply' メソッドを有効にします。*/
+    // "strictPropertyInitialization": true,  /* クラスのプロパティの初期化を厳密にチェックできるようにします。*/
+    // "noImplicitThis": true,                /* 'any' 型が暗黙的に指定された 'this' 式に対してエラーを発生させます。*/
+    // "alwaysStrict": true,                  /* 厳密モードでパースし、ソースファイルごとに "use strict "を発行します。*/
+
+    /* 追加チェック */
+    // "noUnusedLocals": true,                /* 未使用のローカルに対してエラーを報告する。*/
+    // "noUnusedParameters": true,            /* 未使用のパラメータのエラーを報告する。*/
+    // "noImplicitReturns": true,             /* 関数内の全てのコードパスが値を返さない場合にエラーを報告する。*/
+    // "noFallthroughCasesInSwitch": true,    /* switch文中のフォールスルーケースのエラーを報告します。*/
+
+    /* モジュール解像度オプション */
+    // "moduleResolution". "node",            /* モジュールの解決方法を指定します: 'node' (Node.js) または 'classic' (TypeScript pre-1.6)。*/
+    // "baseUrl": "./",                       /* 非絶対的なモジュール名を解決するためのベースディレクトリ。*/
+    // "paths". {},                           /* インポートを 'baseUrl' からの相対的な検索位置にリマップする一連のエントリ。*/
+    // "rootDirs": [],                        /* 実行時のプロジェクトの構造を表すルートフォルダの一覧。*/
+    // "typeRoots". [],                       /* 型定義を含むフォルダのリスト。*/
+    // "types ": [],                          /* コンパイル時に含める型宣言ファイル。*/
+    // "allowSyntheticDefaultImports": true,  /* デフォルトのエクスポートがないモジュールからのデフォルトのインポートを許可します。これはコードのエミットには影響しません。*/
+    "esModuleInterop": true,                  /* すべてのインポートに対して名前空間オブジェクトを作成することで、CommonJSとESモジュール間のエミット相互運用性を有効にします。allowSyntheticDefaultImports'を意味します。*/
+    // "preserveSymlinks": true,              /* シンボリックリンクの実パスを解決しない。*/
+    // "allowUmdGlobalAccess": true,          /* モジュールからの UMD グローバルへのアクセスを許可します。*/
+
+    /* ソースマップオプション */
+    // "sourceRoot". "",                      /* デバッガがソースの場所ではなく、TypeScriptファイルを配置する場所を指定します。*/
+    // "mapRoot":"",                          /* 生成された場所ではなく、デバッガがマップファイルを配置する場所を指定します。*/
+    // "inlineSourceMap": true,               /* 別々のファイルを持つのではなく、ソースマップを一つのファイルにまとめて出力します。*/
+    // "inlineSources": true,                 /* 1つのファイル内でソースをソースマップと一緒に出力する; '--inlineSourceMap' または '-sourceMap' が設定されている必要がある。*/
+
+    /* 実験オプション */
+    // "experimentalDecorators": true,        /* ES7 デコレータの実験的なサポートを有効にします。*/
+    // "emitDecoratorMetadata" : true,        /* デコレータの型のメタデータを出力するための実験的なサポートを有効にする。*/
+
+    /* 詳細オプション */
+    "skipLibCheck": true,                     /* 宣言ファイルの型チェックをスキップする。*/
+    "forceConsistentCasingInFileNames": true  /* 矛盾した大文字小文字の同じファイルへの参照を禁止する。*/
+  }
+}
